@@ -42,3 +42,4 @@ Here are listed some of the main functions used in this project
 2. `Menu.myLoop` The function called at each engine frame. It handles the various status of the game, like showing the menus, displaying win or lose screen and others. All possible status are listed in `type Status = Menu|InGame|Victory|ShowSolution|KeysMenu|SelectMode|Lose`
 3. `MazeGenerator.Maze.generateMaze` It's the main algorithm that generates the maze. The generated MazeCells are listed in `MazeGenerator.Maze.mutableMaze : MazeCell list`
 4. `MazeGenerator.Maze.weightedSolution` Finds the shortest solution using Dijkstra's algorithm and return it as a MazeCell list
+5. `Menu.MySoundPlayer.SetSounds` Used to play different .wav resources depending on which status the player is. We decided to inherit from `SoundPlayer` class in order to use a single object for every sound
